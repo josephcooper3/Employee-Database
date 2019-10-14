@@ -1,10 +1,16 @@
 package staff;
 
-public abstract class employee {
+public abstract class Employee {
 
     private String name;
     private String nINumber;
-    private double salary;
+    private Double salary;
+
+    public Employee(String name, String nINumber, Double salary) {
+        this.name = name;
+        this.nINumber = nINumber;
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
@@ -18,11 +24,11 @@ public abstract class employee {
         return salary;
     }
 
-    public void raiseSalary(double increment){
+    public void raiseSalary(Double increment){
         salary = salary * (100.0+increment);
     }
 
-    public double payBonus(){
+    public Double payBonus(){
         return salary / 100;
     }
 
