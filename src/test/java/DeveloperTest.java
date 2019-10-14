@@ -51,4 +51,10 @@ public class DeveloperTest {
         assertEquals("Jay Boon", developer.getName());
     }
 
+    @Test
+    public void cannotSetNameNull(){
+        developer.setName("");
+        assertEquals("Pat Lee", developer.getName());
+    }
+
 }

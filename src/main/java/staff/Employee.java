@@ -36,6 +36,8 @@ public abstract class Employee {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != "") {
+            this.name = name;
+        }
     }
 }
