@@ -39,4 +39,10 @@ public class DeveloperTest {
         assertEquals(300.00, developer.payBonus(), 2);
     }
 
+    @Test
+    public void cannotRaiseSalaryByNegative(){
+        developer.raiseSalary(-0.02);
+        assertEquals(30000.00, developer.getSalary(), 2);
+    }
+
 }
