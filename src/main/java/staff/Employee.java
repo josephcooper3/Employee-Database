@@ -35,4 +35,7 @@ public abstract class Employee {
         return salary / 100;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

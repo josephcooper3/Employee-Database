@@ -45,4 +45,10 @@ public class DeveloperTest {
         assertEquals(30000.00, developer.getSalary(), 2);
     }
 
+    @Test
+    public void canSetName(){
+        developer.setName("Jay Boon");
+        assertEquals("Jay Boon", developer.getName());
+    }
+
 }
