@@ -25,7 +25,7 @@ public abstract class Employee {
     }
 
     public void raiseSalary(Double increment){
-        salary = salary * (100.0+increment);
+        salary = salary * (1+increment);
     }
 
     public Double payBonus(){
